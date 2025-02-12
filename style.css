@@ -1,0 +1,630 @@
+
+html{
+  width: 100vw;
+  height: 100vh;
+  
+}
+
+body{  
+  margin: 0px;
+  width: 100%;
+  height: 100%; 
+  overflow-x: hidden;
+  
+}
+
+
+main{
+ /*min-width: 320px;*/
+ 
+  
+}
+
+.jetbrains-mono, section{
+  font-family: "JetBrains Mono", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+
+}
+
+main header {
+  width: 100%;
+  height: 99px;
+  position: relative;
+  box-sizing: border-box;
+  
+  
+}
+
+header nav {
+  
+  width: 100%;
+  position: fixed; 
+  z-index: 9999;
+  left: 0px;
+  top: 0px;
+box-sizing: border-box;
+
+}
+
+header nav ul {
+  display: flex;  
+  border-radius: 0;
+  padding: 32px;
+  margin: 0px;
+  border-bottom-left-radius: 1px;
+  border-bottom-right-radius: 1px;
+  background-color: #181818;
+  justify-content: space-evenly;
+  align-items: center; 
+box-sizing: border-box;
+  
+
+}
+
+header nav ul li {
+  list-style: none;
+
+}
+
+a {
+  text-decoration: none;
+  color: #d1d1d1;
+
+}
+
+header nav ul li a{
+  text-decoration: none;
+  color: #d1d1d1;
+
+}
+
+header nav ul li:first-child{
+  height: 35px;
+  width: 35px;
+
+  img {    
+    height: 100%;
+    width: 100%; 
+  }
+
+  & > a:hover {
+    filter: brightness(1.4);
+  }
+  
+
+}
+
+header nav ul li a:hover{  
+  color: white;
+
+}
+
+/*--------------------------PROJECTS---------------------------------------*/
+
+main .projects { 
+  display: grid;
+  grid-template-rows: repeat(2, 570px);  
+  gap: 20px;   
+  /*border: 2px solid blue;*/
+  
+}
+
+main .projects > div{  
+  border: 2px solid black; 
+  border-left-style: none;
+  border-right-style: none;
+  
+}
+
+main .projects .first-slide, main .projects .second-slide {
+  border-top-style: none;
+
+}
+
+main .projects .first-slide .content-box, main .projects .second-slide .content-box{
+  height: 100%;
+  background-color: #a8a8d3;
+
+}
+
+main .projects .first-slide .content-box .MES{
+  
+  width: 100%;
+  height: 100%;
+  position: relative;  
+  background-image: url("images/MES.PNG");
+  background-size: contain; 
+  background-position: center;
+  background-repeat: no-repeat; 
+  container-name: mesimage;
+  
+}
+
+
+main .projects .first-slide .content-box .MES .text-overlay{
+  
+  
+  color: #181818;
+  position: absolute;
+  top: 10%;
+  left: 48%;
+  transform: translate(-50%, -50%);
+  font-size: 36px;
+  font-weight: bold;
+  min-width: 390px;
+  min-height: 80px;    
+
+
+}
+
+main .projects .first-slide .content-box .MES .text-overlay p, main .projects .second-slide .content-box .CSM .text-overlay p{
+
+  margin: 0px;  
+  margin-bottom: 10px;
+
+}
+
+main .projects .first-slide .content-box .MES .text-overlay .click-wrapper, main .projects .second-slide .content-box .CSM .text-overlay .click-wrapper{
+  
+  text-align: center;  
+  
+}
+
+main .projects .first-slide .content-box .MES .text-overlay .click-wrapper a .click, main .projects .second-slide .content-box .CSM .text-overlay .click-wrapper a .click{
+  
+  text-align: center;  
+  display: inline;
+  font-size: 14px;
+  border: 1px solid white;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 7px;
+  padding-bottom: 7px; 
+  border-radius: 980px;
+  background-color: rgb(0, 113, 227, 1);
+  color: white;
+  
+}
+
+
+/*--------Second---Slide---------*/
+
+main .projects .second-slide .content-box .CSM {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-image: url("images/SF.png");
+  background-size: contain; 
+  background-position: center;
+  background-repeat: no-repeat; 
+}
+
+main .projects .second-slide .content-box .CSM .text-overlay{
+  
+  
+  color: #181818;
+  position: absolute;
+  top: 8.5%;
+  left: 48%;
+  transform: translate(-50%, -50%);
+  font-size: 36px;
+  font-weight: bold;    
+
+
+}
+
+
+/*---------------------------EDUCATION------------------------------------*/
+
+main .education {
+  display: grid;
+  grid-template-rows: repeat(2, 570px);
+  gap: 20px;
+
+}
+
+main .education > div {
+  border: 2px solid black;
+  border-left-style: none;
+  border-right-style: none;
+
+}
+
+main .education .second-slide {
+  border-top-style: none;
+
+}
+
+main .education .second-slide .content-box{
+  height: 100%;
+
+}
+
+
+main .education .second-slide .content-box > a {
+  
+  width: 100%;
+  display:block;
+  height: 570px;  
+ 
+}
+
+
+main .education .second-slide .content-box a .fiu-library {
+  
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-image: url("images/fiu-library.jpg");
+  background-size: cover; 
+  background-position: center;
+  background-repeat: no-repeat; 
+  
+}
+
+
+main .education .second-slide .content-box a .fiu-library .text-overlay{
+  
+  color: #181818;
+  position: absolute;
+  top: 15%;
+  left: 40%;
+  transform: translate(-35%, -40%);
+  text-align: center;
+
+  font-size: 36px;
+  font-weight: bold;    
+
+}
+
+main .education .second-slide .content-box a .fiu-library .text-overlay p{
+  
+  margin-bottom: 10px;
+
+}
+
+main .education .second-slide .content-box a .fiu-library .text-overlay .click-wrapper {
+  
+  text-align: center;  
+  
+}
+
+main .education .second-slide .content-box a .fiu-library .text-overlay .click-wrapper .click{
+  
+  text-align: center;  
+  display: inline;
+  font-size: 14px;
+  border: 1px solid white;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 7px;
+  padding-bottom: 7px; 
+  border-radius: 980px;
+  background-color: rgb(0, 113, 227, .78);
+  color: white;
+  
+}
+
+
+
+
+/*---------------------------ABOUT-ME------------------------------------*/
+
+
+
+main .about-me { 
+  display: grid;
+  grid-template-rows: repeat(2, 570px);  
+  gap: 20px;   
+  /*border: 2px solid blue;*/
+  padding-top: 20px;
+}
+
+main .about-me > div{  
+  border: 2px solid black; 
+  border-left-style: none;
+  border-right-style: none;
+  
+}
+
+main .about-me .first-slide {
+  border-top-style: none;
+
+}
+
+main .about-me .first-slide .content-box{
+  height: 100%;
+
+}
+
+
+main .about-me .first-slide .content-box > a {
+  
+  width: 100%;
+  display:block;
+  height: 570px;  
+ 
+}
+
+
+main .about-me .first-slide .content-box a .dan-tom-mom {
+  
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-image: url("images/dan-tom-mom.JPEG");
+  background-size: cover; 
+  background-position: center;
+  background-repeat: no-repeat; 
+  
+}
+
+
+main .about-me .first-slide .content-box a .dan-tom-mom .text-overlay{
+  
+  color: #181818;
+  position: absolute;
+  top: 30%;
+  left: 48%;
+  transform: translate(-50%, -50%);
+  font-size: 36px;
+  font-weight: bold;    
+
+
+}
+
+main .about-me .first-slide .content-box a .dan-tom-mom .text-overlay p{
+  
+  margin-bottom: 10px;
+
+}
+
+main .about-me .first-slide .content-box a .dan-tom-mom .text-overlay .click-wrapper {
+  
+  text-align: center;  
+  
+}
+
+main .about-me .first-slide .content-box a .dan-tom-mom .text-overlay .click-wrapper .click{
+  
+  text-align: center;  
+  display: inline;
+  font-size: 14px;
+  border: 1px solid white;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 7px;
+  padding-bottom: 7px; 
+  border-radius: 980px;
+  background-color: rgb(0, 113, 227, .78);
+  color: white;
+  
+}
+
+/*---------------------CONTACT-INFO--------------------------*/
+
+
+main .contact-info { 
+  display: grid;
+  grid-template-rows: repeat(2, 570px);  
+  gap: 20px;   
+  /*border: 2px solid blue;*/
+  
+}
+
+main .contact-info > div{  
+  border: 2px solid black; 
+  border-left-style: none;
+  border-right-style: none;
+  
+}
+
+main .contact-info .first-slide {
+  border-top-style: none;
+
+}
+
+main .contact-info .first-slide .content-box{
+  height: 100%;
+
+}
+
+/*
+main .contact-info .first-slide .content-box > a {
+  
+  width: 100%;
+  display:block;
+  height: 570px;  
+ 
+}
+*/
+
+
+
+main .contact-info .first-slide .content-box .background {
+  
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-color: white;
+  
+}
+
+main .contact-info .first-slide .content-box .background h1{
+  
+  
+  position: absolute;
+  left: 50%;
+  top: 8%;
+  transform: translateX(-50%);
+  
+}
+
+/*_______FORM_______*/
+
+main .contact-info .first-slide .content-box .background .text-overlay form{
+  width: 350px;
+  height: 375px;
+  color: #181818;
+  position: absolute;
+  top: 30%;
+  left: 11%;
+  /*transform: translate(-50%, -50%);*/
+  font-size: 16px;
+  font-weight: normal;    
+
+
+}
+
+main .contact-info .first-slide .content-box .background .text-overlay fieldset{
+  border: 2px dotted black;
+  border-radius: 5px; 
+
+
+}
+
+
+
+main .contact-info .first-slide .content-box .background .text-overlay .logo-wrapper{
+  
+  width: 30%;
+  height: 50%;
+  position: absolute;
+  top: 28%;
+  left: 60%;
+  /*transform: translate(-50%, -50%);*/    
+
+
+}
+
+
+
+main .contact-info .first-slide .content-box .background .text-overlay textarea{
+  
+  max-width: 260px;
+  max-height: 240px;
+  min-width: 220px;
+  min-height: 120px;
+
+}
+
+main .contact-info .first-slide .content-box .background .text-overlay .linkedin-wrapper{
+  
+  
+  position: absolute;
+  top: 0;
+  left: 0;
+ /* transform: translate(-50%, -50%);*/  
+  width: fit-content;
+  height: 100px;
+  
+
+
+}
+
+main .contact-info .first-slide .content-box .background .text-overlay .linkedin-wrapper a {
+  
+  display: flex;
+  align-items: center;  
+  
+}
+
+main .contact-info .first-slide .content-box .background .text-overlay .linkedin-wrapper a img{
+
+  height: 100px;
+  width: 100px; 
+  margin-right: 20px;
+  
+
+
+}
+
+main .contact-info .first-slide .content-box .background .text-overlay .linkedin-wrapper a p{
+  
+  text-align: center;
+  
+  
+  
+}
+
+main .contact-info .first-slide .content-box .background .text-overlay .gmail-wrapper{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  /*transform: translate(-50%, -50%);*/
+  width: 100px;
+  height: auto;
+
+}
+
+main .contact-info .first-slide .content-box .background .text-overlay .gmail-wrapper a {  
+  display: flex;  
+  width: 100%; 
+  height: 100%;
+  align-items: center;
+  
+}
+
+main .contact-info .first-slide .content-box .background .text-overlay .gmail-wrapper a img{
+  height: 100%;
+  width: 100px; 
+  margin-right: 20px;  
+  
+}
+
+@media screen and (min-width: 1000px) {
+  main .projects .first-slide .content-box .MES {
+    background-size: 1000px auto; /* Image width won't exceed 1000px */
+  }
+}
+
+@media screen and (max-width: 430px) {
+  main .projects .first-slide .content-box .MES {
+    background-size: 430px auto; /* Image width won't exceed 1000px */
+  }
+}
+
+@media screen and (min-width: 400px) {
+  main .projects .second-slide .content-box .CSM {
+    background-size: 1000px auto; /* Image width won't exceed 1000px */
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  main .projects .second-slide .content-box .CSM {
+    background-size: 750px auto; /* Image width won't exceed 1000px */
+  }
+}
+
+@media screen and (max-width: 800px) {
+  main .projects .second-slide .content-box .CSM {
+    background-size: 600px auto; /* Image width won't exceed 1000px */
+  }
+}
+
+
+@media screen and (max-width: 430px) {
+  main .projects .first-slide .content-box .MES .text-overlay {
+    min-width: 200px;
+    top: 15%; 
+    > p {
+        text-align: center;
+    
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
