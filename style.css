@@ -1,23 +1,24 @@
 
-html{
-  width: 100vw;
-  height: 100vh;
-  
+html {
+  box-sizing: border-box;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
 
 body{  
-  margin: 0px;
-  width: 100%;
-  height: 100%; 
-  overflow-x: hidden;
+  margin: 0;
   
 }
 
 
-main{
+main {
  /*min-width: 320px;*/
-  width: 100%;
-  height: 100%; 
+  
   
 }
 
@@ -30,37 +31,30 @@ main{
 }
 
 main header {
-  width: 100%;
+  width: 100vw;
   height: 99px;
   position: relative;
-  box-sizing: border-box;
-  
-  
+
 }
 
 header nav {
   
-  width: 100%;
+  width: 100vw;
   position: fixed; 
   z-index: 9999;
   left: 0px;
   top: 0px;
-box-sizing: border-box;
 
 }
 
 header nav ul {
   display: flex;  
   border-radius: 0;
-  padding: 32px;
+  padding: 28px;
   margin: 0px;
-  border-bottom-left-radius: 1px;
-  border-bottom-right-radius: 1px;
   background-color: #181818;
   justify-content: space-evenly;
   align-items: center; 
-box-sizing: border-box;
-  
 
 }
 
@@ -68,6 +62,12 @@ header nav ul li {
   list-style: none;
 
 }
+
+header nav ul li:last-child img {
+  display: none;
+
+}
+
 
 a {
   text-decoration: none;
@@ -108,14 +108,12 @@ main .projects {
   display: grid;
   grid-template-rows: repeat(2, 570px);  
   gap: 20px;   
-  /*border: 2px solid blue;*/
+  
   
 }
 
 main .projects > div{  
-  border: 2px solid black; 
-  border-left-style: none;
-  border-right-style: none;
+  
   
 }
 
@@ -139,7 +137,6 @@ main .projects .first-slide .content-box .MES{
   background-size: contain; 
   background-position: center;
   background-repeat: no-repeat; 
-  container-name: mesimage;
   
 }
 
@@ -227,11 +224,118 @@ main .education {
 }
 
 main .education > div {
-  border: 2px solid black;
-  border-left-style: none;
-  border-right-style: none;
+  
 
 }
+
+main .education .first-slide {
+  
+}
+
+main .education .first-slide .content-box {
+  
+
+}
+
+main .education .first-slide .content-box .binary-code-background {
+  width: 100%;
+  height: 100%;
+  background-image: url("images/coding.jpg");
+}
+
+main .education .first-slide .content-box .binary-code-background .skills {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: repeat(6, minmax(0, 100px));
+  max-height: 100%;
+  max-width: 100%;
+  
+}
+
+main .education .first-slide .content-box .binary-code-background .skills img{
+  background-color: white;
+  width: 50px;
+  height: 50px;
+  
+}
+
+main .education .first-slide .content-box .binary-code-background .skills img:first-child{
+  grid-row: 1 / 4;
+  width: 250px;
+  height: 350px;
+  background-color: transparent;
+  
+}
+
+main .education .first-slide .content-box .binary-code-background .skills img:nth-child(2){
+  grid-column: 2 / 5;
+  width: 530px;
+  height: 200px;
+  background-color: transparent;
+  justify-self: center;
+  
+}
+
+main .education .first-slide .content-box .binary-code-background .skills img:nth-child(3){
+  grid-column: 2 / 4;
+  grid-row: 3 / 4;
+  width: 500px;
+  height: 167.9px;
+  background-color: transparent;
+  justify-self: center;
+  
+}
+
+main .education .first-slide .content-box .binary-code-background .skills img:nth-child(4){
+  grid-column: 3 / 5; 
+  grid-row: 5 / 7;
+  width: 400px;
+  height: 200px;
+  background-color: transparent;
+  justify-self: right;
+  
+  
+  
+}
+
+main .education .first-slide .content-box .binary-code-background .skills img:nth-child(5){
+  grid-column: 4 / 5;
+  grid-row: 3 / 5;
+  width: 161px;
+  height: 144px;
+  background-color: transparent;
+  justify-self: center;
+  align-self: center;
+  
+  
+}
+
+main .education .first-slide .content-box .binary-code-background .skills img:nth-child(6){
+  grid-column: 1 / 2;
+  grid-row: 5 / 7;
+  width: 200px;
+  height: 200px;
+  background-color: transparent;
+  justify-self: end;
+  align-self: center;
+  
+}
+
+main .education .first-slide .content-box .binary-code-background .skills img:nth-child(7){
+  grid-column: 2 / 4;
+  grid-row: 5 / 7;
+  width: 200px;
+  height: 125px;
+  background-color: transparent;
+  justify-self: center;
+  align-self: center;
+  
+}
+
+
 
 main .education .second-slide {
   border-top-style: none;
@@ -246,7 +350,6 @@ main .education .second-slide .content-box{
 
 main .education .second-slide .content-box > a {
   
-  width: 100%;
   display:block;
   height: 570px;  
  
@@ -255,7 +358,6 @@ main .education .second-slide .content-box > a {
 
 main .education .second-slide .content-box a .fiu-library {
   
-  width: 100%;
   height: 100%;
   position: relative;
   background-image: url("images/fiu-library.jpg");
@@ -274,8 +376,7 @@ main .education .second-slide .content-box a .fiu-library .text-overlay{
   left: 40%;
   transform: translate(-35%, -40%);
   text-align: center;
-
-  font-size: 36px;
+  font-size: 33px;
   font-weight: bold;    
 
 }
@@ -283,6 +384,12 @@ main .education .second-slide .content-box a .fiu-library .text-overlay{
 main .education .second-slide .content-box a .fiu-library .text-overlay p{
   
   margin-bottom: 10px;
+
+}
+
+main .education .second-slide .content-box a .fiu-library .text-overlay .abbreviation{
+  
+  display: none;
 
 }
 
@@ -365,6 +472,7 @@ main .about-me .first-slide .content-box a .dan-tom-mom {
 
 main .about-me .first-slide .content-box a .dan-tom-mom .text-overlay{
   
+  width: 281px;
   color: #181818;
   position: absolute;
   top: 30%;
@@ -381,6 +489,7 @@ main .about-me .first-slide .content-box a .dan-tom-mom .text-overlay p{
   margin-bottom: 10px;
 
 }
+
 
 main .about-me .first-slide .content-box a .dan-tom-mom .text-overlay .click-wrapper {
   
@@ -470,11 +579,11 @@ main .contact-info .first-slide .content-box .background .text-overlay form{
   height: 375px;
   color: #181818;
   position: absolute;
-  top: 30%;
-  left: 11%;
-  /*transform: translate(-50%, -50%);*/
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   font-size: 16px;
-  font-weight: normal;    
+  font-weight: normal;   
 
 
 }
@@ -490,12 +599,12 @@ main .contact-info .first-slide .content-box .background .text-overlay fieldset{
 
 main .contact-info .first-slide .content-box .background .text-overlay .logo-wrapper{
   
-  width: 30%;
-  height: 50%;
+  width: 600px;
+  height: 100px;
   position: absolute;
-  top: 28%;
-  left: 60%;
-  /*transform: translate(-50%, -50%);*/    
+  top: 50%;
+  left: 50%;
+  transform: translate(-45%, 100%); 
 
 
 }
@@ -517,11 +626,9 @@ main .contact-info .first-slide .content-box .background .text-overlay .linkedin
   position: absolute;
   top: 0;
   left: 0;
- /* transform: translate(-50%, -50%);*/  
+  /* transform: translate(-50%, -50%); */
   width: fit-content;
   height: 100px;
-  
-
 
 }
 
@@ -545,25 +652,22 @@ main .contact-info .first-slide .content-box .background .text-overlay .linkedin
 main .contact-info .first-slide .content-box .background .text-overlay .linkedin-wrapper a p{
   
   text-align: center;
-  
-  
+
   
 }
 
 main .contact-info .first-slide .content-box .background .text-overlay .gmail-wrapper{
   position: absolute;
-  bottom: 0;
-  left: 0;
-  /*transform: translate(-50%, -50%);*/
-  width: 100px;
+  bottom: 7;
+  right: 0;
+  /* transform: translate(-50%, -50%); */
+  width: fit-content;
   height: auto;
 
 }
 
 main .contact-info .first-slide .content-box .background .text-overlay .gmail-wrapper a {  
   display: flex;  
-  width: 100%; 
-  height: 100%;
   align-items: center;
   
 }
@@ -575,46 +679,128 @@ main .contact-info .first-slide .content-box .background .text-overlay .gmail-wr
   
 }
 
-@media screen and (min-width: 1000px) {
+/*
+
+@media screen and (max-width: 850px) {
+  main .contact-info .first-slide .content-box .background .text-overlay form {
+   
+  }
+
+  main .contact-info .first-slide .content-box .background .text-overlay .logo-wrapper {
+   
+  }
+
+  main .contact-info .first-slide .content-box .background .text-overlay .logo-wrapper .linkedin-wrapper {
+    
+  }
+
+  main .contact-info .first-slide .content-box .background .text-overlay .logo-wrapper .gmail-wrapper {
+   
+  }
+}
+
+*/
+
+@media screen and (max-width: 490px) {
+  header nav ul li:not(:first-child):not(:last-child) {
+    display: none;
+  }
+
+  header nav ul {
+    justify-content: space-between;
+  }
+
+  header nav ul li:last-child a{
+    display: none;
+   
+  }
+
+  header nav ul li:last-child img{
+    display: list-item;
+    height: 50px;
+    width: 50px;
+    background-color: white;
+    border-radius: 20px;
+   
+  }
+
+  
+
+  
+}
+
+
+@media screen and (max-width: 431px) {
   main .projects .first-slide .content-box .MES {
-    background-size: 1000px auto; /* Image width won't exceed 1000px */
+    background-size: 375px auto; /* Image width won't be smaller than 430px */
   }
-}
 
-@media screen and (max-width: 430px) {
-  main .projects .first-slide .content-box .MES {
-    background-size: 430px auto; /* Image width won't exceed 1000px */
-  }
-}
-
-@media screen and (min-width: 400px) {
-  main .projects .second-slide .content-box .CSM {
-    background-size: 1000px auto; /* Image width won't exceed 1000px */
-  }
-}
-
-@media screen and (max-width: 1000px) {
-  main .projects .second-slide .content-box .CSM {
-    background-size: 750px auto; /* Image width won't exceed 1000px */
-  }
-}
-
-@media screen and (max-width: 800px) {
-  main .projects .second-slide .content-box .CSM {
-    background-size: 600px auto; /* Image width won't exceed 1000px */
-  }
-}
-
-
-@media screen and (max-width: 430px) {
-  main .projects .first-slide .content-box .MES .text-overlay {
+   main .projects .first-slide .content-box .MES .text-overlay {
     min-width: 200px;
     top: 15%; 
     > p {
         text-align: center;
     
+    }
+  }
+
+  main .projects .second-slide .content-box .CSM {
+    background-size: 375px auto; /* Image width won't be smaller than 430px */
+  }
+
+  main .education .second-slide .content-box a .fiu-library .text-overlay .abbreviation {
+    display: inline-block;
+  }
+
+  main .education .second-slide .content-box a .fiu-library .text-overlay .not-abbr {
+    display: none;
+  }
+
+  main .contact-info .first-slide .content-box .background .text-overlay .logo-wrapper .linkedin-wrapper .username {
+    display: none;
+  }
+
+  main .contact-info .first-slide .content-box .background .text-overlay .logo-wrapper .gmail-wrapper .email{
+    display: none;
+  }
+
+  main .contact-info .first-slide .content-box .background .text-overlay .logo-wrapper {
+    width: auto;
+    display: flex;
+    align-content: center;
+    align-items: center;
+  } 
+  
+  main .contact-info .first-slide .content-box .background .text-overlay .logo-wrapper .linkedin-wrapper,
+  main .contact-info .first-slide .content-box .background .text-overlay .logo-wrapper .gmail-wrapper {
+    position: static;
+    width: auto;
+    height: auto;
+  }
+
+  main .contact-info .first-slide .content-box .background .text-overlay .logo-wrapper img {
+    width: 100px;
+    height: 100px;
+  }
+  
+
+}
+
+
+@media screen and (min-width: 1000px) {
+  main .projects .first-slide .content-box .MES {
+    background-size: 1000px auto; /* Background image width won't exceed 1000px */
   }
 }
+
+@media screen and (min-width: 1000px) {
+  main .projects .second-slide .content-box .CSM {
+    background-size: 1000px auto; /* Background image width won't exceed 1000px */
+  }
+}
+
+
+
 
 
 
