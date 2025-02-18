@@ -10,6 +10,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/647fe92b87.js" crossorigin="anonymous"></script>
+    <script src="index2.js"></script>
   </head>
 
   <body>
@@ -145,22 +147,50 @@
 	    
 	      <div class=""> 
 		<div class="background">  
-                  <h1 style="margin: 0px">Contact me</h1>
+                  <h1>Contact me 
+			<span class="tooltip-icon" data-tooltip="This is a tooltip message"><i class="fa-solid fa-circle-info"></i><div class="tooltip-message">This message is being sent to me using Twilio. If necessary I will give you my personal number. Thanks!</div></span></h1>
 		  <div class="text-overlay">
 		    <form> <!-- This form will send me a message using Twilio so I dont share my personal info -->
                       <fieldset>
 			<!-- Text Input -->
-                        <label for="name">Name: </label>
-	                <input type="text" id="name" name="name" placeholder="Your name...">
-			<br></br>
-                        <label for="phone">Phone #: </label>
-	                <input type="tel" id="phone" name="phone-num" placeholder="Your phone number...">
-			<br></br>                        
-                        <label style="display: block" for="message">Message: </label>
-			<textarea id="message" name="message to Daniel" rows="5" cols="30" placeholder="Type your message here..."></textarea>
-                        <input style="display: block" type= "submit" id="message">
+			<div class="form-group" >
+                          <div class="credentials" id="username">
+                            <label for="name"><i class="fa-solid fa-user"></i> </label>
+	                    <input type="text" name="name" placeholder="Your name..." onfocus="addBoxShadow('username')" onblur="removeBoxShadow('username')">
+			  </div>
+			  <div class="credentials" id="phone">
+                            <label for="phone"><i class="fa-solid fa-phone"></i> </label>
+	                    <input type="tel" name="phone-num" placeholder="Your phone number..." onfocus="addBoxShadow('phone')" onblur="removeBoxShadow('phone')" >
+			  </div>
+			</div>
+			
+			<div class="textarea-and-send" >    
+			  <div class="label-and-ta">                  
+                            <label style="display: block"  for="message"></label>
+			    <textarea id="message" name="message to Daniel" rows="5" cols="30" placeholder="Type your message here..." onfocus="addBoxShadow('message')" onblur="removeBoxShadow('message')"></textarea>
+			  </div>
+			  <div class="send">
+<!--
+                            <button class="paper-plane-submit" type= "submit" id="message" aria-label="Submit">
+			      <i class="fa-solid fa-paper-plane"></i>
+			    </button>
+-->
+			    <button class="send" style="display: block" type="submit" id="message" aria-label="Send">
+			      <p style="margin: 0px" >Send</p> 
+			    </button>
+
+			  </div>
+			</div>
+
+			<div class= "socials">
+			  <a class="linkedin" href="https://www.linkedin.com/in/danielibarra2020/"><i class="fa-brands fa-linkedin-in"></i></a>
+			  <a class="x" href="https://x.com/home"><i class="fa-brands fa-x-twitter"></i></a>
+			  <a class="gmail" href="https://workspace.google.com/intl/en-US/gmail/"><i class="fa-brands fa-google"></i></a>			  
+			</div>
+			
                       </fieldset>
                     </form>
+		<!--
 		    <div class="logo-wrapper">
 	              <div class="linkedin-wrapper">
  		        <a href=""><img src="images/linkedin.png" alt="LinkedIn logo"> <p class ="username">dannyibarra</p></a> 
@@ -169,6 +199,7 @@
  		        <a href=""><img src="images/Gmail_icon.png" alt="Gmail logo">  <p class = "email">dannibar201@gmail.com</p></a> 
 		      </div>
 		    </div>
+-->
 		  </div>
 		</div>
 	      </div>
