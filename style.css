@@ -158,6 +158,7 @@ main .projects {
 
 main .projects .first-slide, main .projects .second-slide {
   border-top-style: none;
+  height: 100%;
 
 }
 
@@ -473,6 +474,11 @@ main .about-me {
   /*border: 2px solid blue;*/
 }
 
+main .about-me .first-slide {
+  height: 100%;
+
+}
+
 main .about-me .first-slide .content-box{
   height: 100%;
 
@@ -562,6 +568,7 @@ main .contact-info > div{
 
 main .contact-info .first-slide {
   border-top-style: none;
+  height: 100%;
 
 }
 
@@ -570,15 +577,21 @@ main .contact-info .first-slide .content-box{
 
 }
 
-/*
-main .contact-info .first-slide .content-box > a {
+
+main .contact-info .first-slide .content-box  {
   
   width: 100%;
   display:block;
   height: 570px;  
  
 }
-*/
+
+main .contact-info .first-slide .content-box .background-container{
+  
+  height: 100%;
+ 
+}
+
 
 
 
