@@ -237,7 +237,7 @@ main .projects .second-slide .content-box .CSM {
   width: 100%;
   height: 100%;
   position: relative;
-  background-image: url("images/SF.png");
+  background-image: url("images/SF.PNG");
   background-size: contain; 
   background-position: center;
   background-repeat: no-repeat; 
