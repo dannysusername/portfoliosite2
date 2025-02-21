@@ -14,12 +14,13 @@ body{
   
 }
 
-
+/*
 main {
- /*min-width: 320px;*/
+ min-width: 320px;
   
   
 }
+*/
 
 ul, section ,input::placeholder{
   font-family: "JetBrains Mono", serif;
@@ -154,10 +155,6 @@ main .projects {
   
 }
 
-main .projects > div{  
-  
-  
-}
 
 main .projects .first-slide, main .projects .second-slide {
   border-top-style: none;
@@ -869,28 +866,6 @@ main .contact-info .first-slide .content-box .background .text-overlay form fiel
     display: none;
   }
 
-  main .contact-info .first-slide .content-box .background .text-overlay .logo-wrapper .linkedin-wrapper .username {
-    display: none;
-  }
-
-  main .contact-info .first-slide .content-box .background .text-overlay .logo-wrapper .gmail-wrapper .email{
-    display: none;
-  }
-
-  main .contact-info .first-slide .content-box .background .text-overlay .logo-wrapper {
-    width: auto;
-    display: flex;
-    align-content: center;
-    align-items: center;
-  } 
-  
-  main .contact-info .first-slide .content-box .background .text-overlay .logo-wrapper .linkedin-wrapper,
-  main .contact-info .first-slide .content-box .background .text-overlay .logo-wrapper .gmail-wrapper {
-    position: static;
-    width: auto;
-    height: auto;
-  }
-
   main .contact-info .first-slide .content-box .background .text-overlay .logo-wrapper img {
     width: 100px;
     height: 100px;
@@ -904,12 +879,12 @@ main .education .first-slide .content-box .binary-code-background .skills img:nt
   }
 
  
-
+/*
   main .education .first-slide .content-box .binary-code-background .skills img:nth-child(2) {
-    /*HTML*/
+    html
     
-  }
-
+  
+*/
 
   main .education .first-slide .content-box .binary-code-background .skills img:nth-child(3) {
     /*React*/
