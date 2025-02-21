@@ -1,4 +1,3 @@
-
 html {
   box-sizing: border-box;
   overflow-y: scroll;
@@ -22,7 +21,7 @@ main {
   
 }
 
-.jetbrains-mono, section ,input::placeholder{
+ul, section ,input::placeholder{
   font-family: "JetBrains Mono", serif;
   font-optical-sizing: auto;
   font-weight: 400;
@@ -31,15 +30,56 @@ main {
 }
 
 main header {
-  width: 100vw;
-  height: 99px;
+  width: 100%;
+  height: 91px;
   position: relative;
 
 }
 
+main .nav-menu {
+  height: 100%;
+  width: 130px;
+  position: fixed;
+  background-color: #181818;
+  right: -130px;
+  z-index: 9998;
+  padding: 0px;
+  color: white;
+  z-index: 9998;
+  transition: right 1s ease;  
+  top: 106px;
+}
+
+main .nav-menu ul{
+  padding: 0;
+  margin: 0;
+  height: 230px;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+}
+
+main .nav-menu ul li{
+  
+  flex-grow: 1;
+  background-color:#7378795e;
+  border: 1px solid #181818;
+  
+  
+}
+
+main .nav-menu ul li a{
+  align-self: center;
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+}
+
 header nav {
   
-  width: 100vw;
+  width: 100%;
   position: fixed; 
   z-index: 9999;
   left: 0px;
@@ -102,13 +142,15 @@ header nav ul li a:hover{
 
 }
 
+main .projects, .education, .about-me, .contact-info {
+  display: grid;
+  gap: 0px;
+}
+
 /*--------------------------PROJECTS---------------------------------------*/
 
-main .projects { 
-  display: grid;
-  grid-template-rows: repeat(2, 570px);  
-  gap: 20px;   
-  
+main .projects {  
+  grid-template-rows: repeat(2,570px);  
   
 }
 
@@ -122,7 +164,7 @@ main .projects .first-slide, main .projects .second-slide {
 
 }
 
-main .projects .first-slide .content-box, main .projects .second-slide .content-box{
+main .projects .first-slide .content-box {
   height: 100%;
   background-color: #a8a8d3;
 
@@ -189,6 +231,11 @@ main .projects .first-slide .content-box .MES .text-overlay .click-wrapper a .cl
 
 /*--------Second---Slide---------*/
 
+main .projects .second-slide .content-box{
+  height: 100%;
+  background-color: #df93d8;
+}
+
 main .projects .second-slide .content-box .CSM {
   width: 100%;
   height: 100%;
@@ -216,26 +263,12 @@ main .projects .second-slide .content-box .CSM .text-overlay{
 
 /*---------------------------EDUCATION------------------------------------*/
 
-main .education {
-  display: grid;
-  grid-template-rows: repeat(2, 570px);
-  gap: 20px;
+main .education {  
+  grid-template-rows: repeat(2, 570px);  
 
 }
 
-main .education > div {
-  
 
-}
-
-main .education .first-slide {
-  
-}
-
-main .education .first-slide .content-box {
-  
-
-}
 
 main .education .first-slide .content-box .binary-code-background {
   width: 100%;
@@ -438,22 +471,9 @@ main .education .second-slide .content-box a .fiu-library .text-overlay .click-w
 
 main .about-me { 
   display: grid;
-  grid-template-rows: repeat(2, 570px);  
+  grid-template-rows: 570px;  
   gap: 20px;   
   /*border: 2px solid blue;*/
-  padding-top: 20px;
-}
-
-main .about-me > div{  
-  border: 2px solid black; 
-  border-left-style: none;
-  border-right-style: none;
-  
-}
-
-main .about-me .first-slide {
-  border-top-style: none;
-
 }
 
 main .about-me .first-slide .content-box{
@@ -461,9 +481,7 @@ main .about-me .first-slide .content-box{
 
 }
 
-
-main .about-me .first-slide .content-box > a {
-  
+main .about-me .first-slide .content-box > a { 
   width: 100%;
   display:block;
   height: 570px;  
@@ -516,7 +534,7 @@ main .about-me .first-slide .content-box a .dan-tom-mom .text-overlay .click-wra
   text-align: center;  
   display: inline;
   font-size: 14px;
-  border: 1px solid white;
+  border: 1px solid rgb(255, 255, 255);
   padding-left: 15px;
   padding-right: 15px;
   padding-top: 7px;
@@ -532,7 +550,7 @@ main .about-me .first-slide .content-box a .dan-tom-mom .text-overlay .click-wra
 
 main .contact-info { 
   display: grid;
-  grid-template-rows: repeat(2, 570px);  
+  grid-template-rows: 570px;  
   gap: 20px;   
   /*border: 2px solid blue;*/
   
@@ -792,21 +810,19 @@ main .contact-info .first-slide .content-box .background .text-overlay form fiel
 
 }
 
+
+
 /*---------MEDIA QUERIES---------*/
 
 
-@media screen and (max-width: 490px) {
+@media screen and (max-width: 600px) {
   header nav ul li:not(:first-child):not(:last-child) {
     display: none;
   }
 
   header nav ul {
-    justify-content: space-between;
-  }
-
-  header nav ul li:last-child a{
-    display: none;
-   
+    justify-content: space-between;   
+    
   }
 
   header nav ul li:last-child img{
@@ -818,7 +834,12 @@ main .contact-info .first-slide .content-box .background .text-overlay form fiel
    
   }
 
-  
+  .nav-menu.active {
+    
+    right: 0;
+  }
+
+ 
 }
 
 

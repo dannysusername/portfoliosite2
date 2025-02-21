@@ -11,23 +11,40 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/647fe92b87.js" crossorigin="anonymous"></script>
-    <script src="index2.js"></script>
+    <script src="index2.js" defer></script>
   </head>
 
   <body>
     <main>
 
-      <header>
-        <nav>
-	  <ul class="jetbrains-mono">
-            <li><a href=""> <img src="images/f-35-icon.png" alt="F-35 Fighter Jet Icon"> </a>
-	    <li><a href="">Projects</a></li>
-	    <li><a href="">Education</a></li>
-	    <li><a href="">About me</a></li>
-	    <li><a href="">Contact info</a><img src="images/hamburger.png" alt="toggle menu"> </li>
-	  </ul>
-	</nav>
-      </header>
+		<header>
+			<nav>
+				<ul class="jetbrains-mono">
+					
+						<li><a href=""> <img src="images/f-35-icon.png" alt="F-35 Fighter Jet Icon"> </a>
+						<li><a href="">Projects</a></li>
+						<li><a href="">Education</a></li>
+						<li><a href="">About me</a></li>
+						<li><a href="">Contact info</a></li>
+						<li class = "burger"><img src="images/hamburger.png" alt="toggle menu"> </li>			
+					
+				</ul>
+
+			</nav>
+			<div class = "nav-menu">
+				<ul>
+					<li><a href="">Projects</a></li>
+					<li><a href="">Education</a></li>
+					<li><a href="">About me</a></li>
+					<li><a href="">Contact info</a></li>
+				</ul>
+	
+			</div>
+		</header>
+
+		
+	
+	  
 
 <!--------------------------PROJECTS--------------------------------------->
 
@@ -131,11 +148,6 @@
 	    </div>
 	  </div>  	  
         </div>
-	
-        <div class="second-slide"> /*pictures*/
-	  <div class="content-box">
-	  </div>
-        </div>
         
       </section>
 
@@ -148,7 +160,8 @@
 	      <div class=""> 
 		<div class="background">  
                   <h1>Contact me 
-			<span class="tooltip-icon" data-tooltip="This is a tooltip message"><i class="fa-solid fa-circle-info"></i><div class="tooltip-message">This message is being sent to me using Twilio. If necessary I will give you my personal number. Thanks!</div></span></h1>
+			<span class="tooltip-icon" data-tooltip="This is a tooltip message"><i class="fa-solid fa-circle-info"></i><div class="tooltip-message">This message is being sent to me using Twilio. If necessary I will give you my personal number. 
+		    Thanks!</div></span></h1>
 		  <div class="text-overlay">
 		    <form> <!-- This form will send me a message using Twilio so I dont share my personal info -->
                       <fieldset>
@@ -209,10 +222,7 @@
 	  </div>  	  
         </div>
 	
-        <div class="second-slide"> /*pictures*/
-	  <div class="content-box">
-	  </div>
-        </div>
+        
       </section>
     
 
