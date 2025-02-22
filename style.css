@@ -22,6 +22,11 @@ ul, section ,input::placeholder{
 
 }
 
+a {
+  color: white;
+  text-decoration:none;
+}
+
 main header {
   width: 100%;
   height: 91px;
@@ -110,7 +115,6 @@ main .nav-menu {
 main .nav-menu ul{
   padding: 0;
   margin: 0;
-  height: 230px;
   list-style-type: none;
   display: flex;
   flex-direction: column;
@@ -132,6 +136,7 @@ main .nav-menu ul li a{
   width: 100%;
   height: 100%;
   padding: 20px;
+  
 }
 
 main .projects, .education, .about-me, .contact-info {
