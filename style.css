@@ -647,7 +647,7 @@ main .contact-info .first-slide .content-box .background h1{
   position: absolute;
   z-index: 1;
   bottom: 125%;
-  left: 50%;
+  right: 10%;
   margin-left: -60px;
   opacity: 0;
   transition: opacity 0.3s;
@@ -862,6 +862,8 @@ main .contact-info .first-slide .content-box .background .text-overlay fieldset{
     flex-direction: column;
     gap: 0px;
   }
+
+
 
 }
 
