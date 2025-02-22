@@ -274,7 +274,17 @@ main .education {
 
 }
 
+main .education .first-slide  {
+  width: 100%;
+  height: 100%;
+ 
+}
 
+main .education .first-slide .content-box{
+  width: 100%;
+  height: 100%;
+ 
+}
 
 main .education .first-slide .content-box .binary-code-background {
   width: 100%;
