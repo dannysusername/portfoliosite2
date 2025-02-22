@@ -14,6 +14,10 @@ body{
   
 }
 
+main {
+  width: 100%;
+}
+
 ul, section ,input::placeholder{
   font-family: "JetBrains Mono", serif;
   font-optical-sizing: auto;
@@ -611,6 +615,7 @@ main .contact-info .first-slide .content-box .background {
 main .contact-info .first-slide .content-box .background h1{  
   height: 31px;
   position: absolute;
+  width: 190px;
   left: 50%;
   top: 8%;
   transform: translateX(-50%);
@@ -743,13 +748,12 @@ main .contact-info .first-slide .content-box .background .text-overlay form fiel
 
 
 main .contact-info .first-slide .content-box .background .text-overlay fieldset .textarea-and-send {
-  
-  display: flex; 
-  width: 350px;
-  height: 120px;
-  justify-content: space-around;
+  display: flex;
+  width: auto;
+  height: 170px;
+  gap:20px;
   align-items: center;
-
+  justify-content: space-between;
 }
 
 main .contact-info .first-slide .content-box .background .text-overlay fieldset .textarea-and-send .send .send{
@@ -787,7 +791,7 @@ main .contact-info .first-slide .content-box .background .text-overlay form fiel
 
 main .contact-info .first-slide .content-box .background .text-overlay form fieldset .socials {
   width: 190px;
-  height: 30px;
+  height: auto;
   display: flex;
   justify-content: space-evenly;
 
@@ -827,6 +831,39 @@ main .contact-info .first-slide .content-box .background .text-overlay form fiel
 
 
 /*---------MEDIA QUERIES---------*/
+@media screen and (max-width: 460px){
+
+main .contact-info .first-slide .content-box .background .text-overlay form{  
+  height: 80%; 
+  width: 90%;   
+  top: 55%;
+  display: flex;
+  flex-direction: column;  
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: white;  
+  box-shadow: 0px 0px 10px 5px purple; 
+  
+  
+}  
+
+main .contact-info .first-slide .content-box .background .text-overlay fieldset{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  box-shadow: 0px 0px 10px 5px purple;
+  justify-content: space-evenly;
+}
+
+  body > main > section.contact-info > div > div > div:nth-child(1) > div > div > form > fieldset > div.textarea-and-send {
+    flex-direction: column;
+    gap: 0px;
+  }
+
+}
 
 
 @media screen and (max-width: 600px) {
@@ -949,19 +986,6 @@ main .education .first-slide .content-box .binary-code-background .skills img:nt
     background-size: 1000px auto; /* Background image width won't exceed 1000px */
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
