@@ -8,6 +8,24 @@ burger.addEventListener("click", () => {
 
 });
 
+document.querySelectorAll(".components").forEach(component => {
+  const carousel = component.querySelector(".carousel");
+  component.querySelector(".fa-solid.fa-arrow-left").addEventListener("click", () => goLeft(carousel));
+  component.querySelector(".fa-solid.fa-arrow-right").addEventListener("click", () => goRight(carousel));
+  
+});
+
+function goRight(carousel){
+  const slideWidth = carousel.querySelector('.slide1').offsetWidth;
+  carousel.scrollLeft += slideWidth;
+
+}
+function goLeft(carousel){
+  const slideWidth = carousel.querySelector('.slide1').offsetWidth;
+  carousel.scrollLeft -= slideWidth;
+  
+}
+
 function addBoxShadow(id) {
   const element = document.getElementById(id);
   element.style.boxShadow = "0px 0px 5px 1.5px rgba(0, 0, 0, 0.2)";

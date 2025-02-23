@@ -78,7 +78,7 @@ header nav ul li a{
 header nav ul li:first-child{
   height: 35px;
   width: 35px;
- }
+ 
   a {
     display: block;
     height: 100%;
@@ -94,11 +94,7 @@ header nav ul li:first-child{
     height: 100%;
     width: 100%; 
   }
-
-  
-  
-
-
+}
 
 header nav ul li a:hover{  
   color: white;
@@ -156,6 +152,65 @@ main .projects, .education, .about-me, .contact-info {
   gap: 0px;
 }
 
+/*-----------CSS FOR CAROUSELL---------------*/
+
+main .components{
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+main .carousel{
+   width: 100%;
+   height: 100%;
+   display: flex;
+   overflow-x: scroll;
+   scroll-behavior: smooth;
+   scroll-snap-type: x mandatory;
+}
+
+.carousel .slide1, .slide2, .slide3{
+  width: 100%;
+ height: 100%;
+ flex-shrink: 0;
+ scroll-snap-align: start;
+}
+
+main .carousel .slide1{
+ background-color: blue;
+}
+
+main .carousel .slide2{
+  background-color: red;
+}
+
+main .carousel .slide3{
+  background-color: green;
+}
+
+main .components i{
+ position: absolute;
+ top: 50%;
+ transform: translateY(-50%);
+ z-index: 2;
+ padding: 20px;
+ border: 1px solid white;
+ border-radius: 100px;
+ color: black;
+ background-color: #ffffff54;
+}
+
+main .components i:first-child{
+ left: 0;
+}
+
+main .components i:last-child{
+ right: 0;
+}
+
+
+
 /*--------------------------PROJECTS---------------------------------------*/
 
 main .projects {  
@@ -164,19 +219,21 @@ main .projects {
 }
 
 
-main .projects .first-slide, main .projects .second-slide {
+
+
+main .projects .OPCenter, main .projects .Agent-Force {
   border-top-style: none;
   height: 100%;
 
 }
 
-main .projects .first-slide .content-box {
+main .projects .OPCenter .content-box {
   height: 100%;
   background-color: #a8a8d3;
 
 }
 
-main .projects .first-slide .content-box .MES{
+main .projects .OPCenter .content-box .MES{
   
   width: 100%;
   height: 100%;
@@ -189,7 +246,7 @@ main .projects .first-slide .content-box .MES{
 }
 
 
-main .projects .first-slide .content-box .MES .text-overlay{
+main .projects .OPCenter .content-box .MES .text-overlay{
   
   
   color: #181818;
@@ -205,20 +262,20 @@ main .projects .first-slide .content-box .MES .text-overlay{
 
 }
 
-main .projects .first-slide .content-box .MES .text-overlay p, main .projects .second-slide .content-box .CSM .text-overlay p{
+main .projects .OPCenter .content-box .MES .text-overlay p, main .projects .Agent-Force .content-box .CSM .text-overlay p{
 
   margin: 0px;  
   margin-bottom: 10px;
 
 }
 
-main .projects .first-slide .content-box .MES .text-overlay .click-wrapper, main .projects .second-slide .content-box .CSM .text-overlay .click-wrapper{
+main .projects .OPCenter .content-box .MES .text-overlay .click-wrapper, main .projects .Agent-Force .content-box .CSM .text-overlay .click-wrapper{
   
   text-align: center;  
   
 }
 
-main .projects .first-slide .content-box .MES .text-overlay .click-wrapper a .click, main .projects .second-slide .content-box .CSM .text-overlay .click-wrapper a .click{
+main .projects .OPCenter .content-box .MES .text-overlay .click-wrapper a .click, main .projects .Agent-Force .content-box .CSM .text-overlay .click-wrapper a .click{
   
   text-align: center;  
   display: inline;
@@ -237,12 +294,67 @@ main .projects .first-slide .content-box .MES .text-overlay .click-wrapper a .cl
 
 /*--------Second---Slide---------*/
 
-main .projects .second-slide .content-box{
+main .projects .Agent-Force .components{
+  position: relative;
+  display: flex;
+  width: 100%;
   height: 100%;
-  background-color: #df93d8;
 }
 
-main .projects .second-slide .content-box .CSM {
+main .projects .Agent-Force .carousel{
+   width: 100%;
+   height: 100%;
+   display: flex;
+   overflow-x: scroll;
+   scroll-behavior: smooth;
+   scroll-snap-type: x mandatory;
+}
+
+main .projects .Agent-Force .carousel .slide1, .slide2, .slide3{
+   width: 100%;
+  height: 100%;
+  flex-shrink: 0;
+  scroll-snap-align: start;
+}
+
+main .projects .Agent-Force .carousel .slide1{
+  background-color: blue;
+}
+
+main .projects .Agent-Force .carousel .slide2{
+   background-color: red;
+}
+
+main .projects .Agent-Force .carousel .slide3{
+   background-color: green;
+}
+
+main .projects .Agent-Force .components i{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  padding: 20px;
+  border: 1px solid white;
+  border-radius: 100px;
+  color: black;
+  background-color: #ffffff54;
+}
+
+main .projects .Agent-Force .components i:first-child{
+  left: 0;
+}
+
+main .projects .Agent-Force .components i:last-child{
+  right: 0;
+}
+
+main .projects .Agent-Force .content-box{
+  height: 100%;
+  background-color: #df93d8;
+} 
+
+main .projects .Agent-Force .content-box .CSM {
   width: 100%;
   height: 100%;
   position: relative;
@@ -252,7 +364,7 @@ main .projects .second-slide .content-box .CSM {
   background-repeat: no-repeat; 
 }
 
-main .projects .second-slide .content-box .CSM .text-overlay{
+main .projects .Agent-Force .slide1 .content-box .CSM .text-overlay{
   
   
   color: #181818;
@@ -274,25 +386,25 @@ main .education {
 
 }
 
-main .education .first-slide  {
+main .education .SKILLS  {
   width: 100%;
   height: 100%;
  
 }
 
-main .education .first-slide .content-box{
+main .education .SKILLS .content-box{
   width: 100%;
   height: 100%;
  
 }
 
-main .education .first-slide .content-box .binary-code-background {
+main .education .SKILLS .content-box .binary-code-background {
   width: 100%;
   height: 100%;
   background-image: url("images/coding.jpg");
 }
 
-main .education .first-slide .content-box .binary-code-background .skills {
+main .education .SKILLS .content-box .binary-code-background .skills {
   width: 100%;
   height: 100%;
   position: relative;
@@ -304,7 +416,7 @@ main .education .first-slide .content-box .binary-code-background .skills {
   
 }
 
-main .education .first-slide .content-box .binary-code-background .skills img{
+main .education .SKILLS .content-box .binary-code-background .skills img{
   background-color: white;
   max-width: 100%; /* Image won't be wider than its container */
   max-height: 100%; /* Image won't be taller than its container */
@@ -313,7 +425,7 @@ main .education .first-slide .content-box .binary-code-background .skills img{
   
 }
 
-main .education .first-slide .content-box .binary-code-background .skills img:first-child{
+main .education .SKILLS .content-box .binary-code-background .skills img:first-child{
   /*Java*/
   grid-column: 1 / 4;
   grid-row: 1 / 7;
@@ -323,7 +435,7 @@ main .education .first-slide .content-box .binary-code-background .skills img:fi
   
 }
 
-main .education .first-slide .content-box .binary-code-background .skills img:nth-child(2){
+main .education .SKILLS .content-box .binary-code-background .skills img:nth-child(2){
   /*HTML-CSS-JS*/
   width: 530px;
   height: 200px;
@@ -334,7 +446,7 @@ main .education .first-slide .content-box .binary-code-background .skills img:nt
   
 }
 
-main .education .first-slide .content-box .binary-code-background .skills img:nth-child(3){
+main .education .SKILLS .content-box .binary-code-background .skills img:nth-child(3){
   /*React*/
   grid-column: 5 / 10;
   grid-row: 4 / 7;
@@ -346,7 +458,7 @@ main .education .first-slide .content-box .binary-code-background .skills img:nt
   
 }
 
-main .education .first-slide .content-box .binary-code-background .skills img:nth-child(4){
+main .education .SKILLS .content-box .binary-code-background .skills img:nth-child(4){
   /*SpringBoot*/
   width: 400px;
   height: 200px;
@@ -361,7 +473,7 @@ main .education .first-slide .content-box .binary-code-background .skills img:nt
   
 }
 
-main .education .first-slide .content-box .binary-code-background .skills img:nth-child(5){
+main .education .SKILLS .content-box .binary-code-background .skills img:nth-child(5){
   /*PostgreSQL*/
   width: 161px;
   height: 144px;
@@ -374,7 +486,7 @@ main .education .first-slide .content-box .binary-code-background .skills img:nt
   
 }
 
-main .education .first-slide .content-box .binary-code-background .skills img:nth-child(6){
+main .education .SKILLS .content-box .binary-code-background .skills img:nth-child(6){
   /*Kubernetes*/
   width: 200px;
   height: 200px;
@@ -387,7 +499,7 @@ main .education .first-slide .content-box .binary-code-background .skills img:nt
   
 }
 
-main .education .first-slide .content-box .binary-code-background .skills img:nth-child(7){
+main .education .SKILLS .content-box .binary-code-background .skills img:nth-child(7){
   /*NPM*/
   width: 200px;
   height: 125px;
@@ -399,27 +511,23 @@ main .education .first-slide .content-box .binary-code-background .skills img:nt
 }
 
 
-
-main .education .second-slide {
-  border-top-style: none;
-
-}
-
-main .education .second-slide .content-box{
+main .education .FIU-CS-BS .content-box{
+  width: 100%;
   height: 100%;
 
 }
 
 
-main .education .second-slide .content-box > a {
+main .education .FIU-CS-BS .content-box > a {
   
   display:block;
-  height: 570px;  
+  height: 100%;  
+  width: 100%;
  
 }
 
 
-main .education .second-slide .content-box a .fiu-library {
+main .education .FIU-CS-BS .content-box a .fiu-library {
   
   height: 100%;
   position: relative;
@@ -431,7 +539,7 @@ main .education .second-slide .content-box a .fiu-library {
 }
 
 
-main .education .second-slide .content-box a .fiu-library .text-overlay{
+main .education .FIU-CS-BS .content-box a .fiu-library .text-overlay{
   
   color: #181818;
   position: absolute;
@@ -444,25 +552,25 @@ main .education .second-slide .content-box a .fiu-library .text-overlay{
 
 }
 
-main .education .second-slide .content-box a .fiu-library .text-overlay p{
+main .education .FIU-CS-BS .content-box a .fiu-library .text-overlay p{
   
   margin-bottom: 10px;
 
 }
 
-main .education .second-slide .content-box a .fiu-library .text-overlay .abbreviation{
+main .education .FIU-CS-BS .content-box a .fiu-library .text-overlay .abbreviation{
   
   display: none;
 
 }
 
-main .education .second-slide .content-box a .fiu-library .text-overlay .click-wrapper {
+main .education .FIU-CS-BS .content-box a .fiu-library .text-overlay .click-wrapper {
   
   text-align: center;  
   
 }
 
-main .education .second-slide .content-box a .fiu-library .text-overlay .click-wrapper .click{
+main .education .FIU-CS-BS .content-box a .fiu-library .text-overlay .click-wrapper .click{
   
   text-align: center;  
   display: inline;
@@ -492,25 +600,25 @@ main .about-me {
   /*border: 2px solid blue;*/
 }
 
-main .about-me .first-slide {
+main .about-me .portrait {
   height: 100%;
 
 }
 
-main .about-me .first-slide .content-box{
+main .about-me .portrait .content-box{
   height: 100%;
 
 }
 
-main .about-me .first-slide .content-box > a { 
+main .about-me .portrait .content-box > a { 
   width: 100%;
   display:block;
-  height: 570px;  
+  height: 100%;
  
 }
 
 
-main .about-me .first-slide .content-box a .dan-tom-mom {
+main .about-me .portrait .content-box a .dan-tom-mom {
   
   width: 100%;
   height: 100%;
@@ -523,7 +631,7 @@ main .about-me .first-slide .content-box a .dan-tom-mom {
 }
 
 
-main .about-me .first-slide .content-box a .dan-tom-mom .text-overlay{
+main .about-me .portrait .content-box a .dan-tom-mom .text-overlay{
   
   width: 281px;
   color: #181818;
@@ -537,20 +645,20 @@ main .about-me .first-slide .content-box a .dan-tom-mom .text-overlay{
 
 }
 
-main .about-me .first-slide .content-box a .dan-tom-mom .text-overlay p{
+main .about-me .portrait .content-box a .dan-tom-mom .text-overlay p{
   
   margin-bottom: 10px;
 
 }
 
 
-main .about-me .first-slide .content-box a .dan-tom-mom .text-overlay .click-wrapper {
+main .about-me .portrait .content-box a .dan-tom-mom .text-overlay .click-wrapper {
   
   text-align: center;  
   
 }
 
-main .about-me .first-slide .content-box a .dan-tom-mom .text-overlay .click-wrapper .click{
+main .about-me .portrait .content-box a .dan-tom-mom .text-overlay .click-wrapper .click{
   
   text-align: center;  
   display: inline;
@@ -907,11 +1015,11 @@ main .contact-info .first-slide .content-box .background .text-overlay fieldset{
 
 
 @media screen and (max-width: 431px) {
-  main .projects .first-slide .content-box .MES {
+  main .projects .OPCenter .content-box .MES {
     background-size: 375px auto; /* Image width won't be smaller than 430px */
   }
 
-   main .projects .first-slide .content-box .MES .text-overlay {
+   main .projects .OPCenter .content-box .MES .text-overlay {
     min-width: 200px;
     top: 15%; 
     > p {
@@ -920,15 +1028,15 @@ main .contact-info .first-slide .content-box .background .text-overlay fieldset{
     }
   }
 
-  main .projects .second-slide .content-box .CSM {
+  main .projects .Agent-Force .content-box .CSM {
     background-size: 375px auto; /* Image width won't be smaller than 430px */
   }
 
-  main .education .second-slide .content-box a .fiu-library .text-overlay .abbreviation {
+  main .education .Agent-Force .content-box a .fiu-library .text-overlay .abbreviation {
     display: inline-block;
   }
 
-  main .education .second-slide .content-box a .fiu-library .text-overlay .not-abbr {
+  main .education .Agent-Force .content-box a .fiu-library .text-overlay .not-abbr {
     display: none;
   }
 
@@ -937,7 +1045,7 @@ main .contact-info .first-slide .content-box .background .text-overlay fieldset{
     height: 100px;
   }
 
-main .education .first-slide .content-box .binary-code-background .skills img:nth-child(4) {
+main .education .SKILLS .content-box .binary-code-background .skills img:nth-child(4) {
     /*Springboot*/
     grid-column: 4 / 10;
     grid-row: 5 / 8;
@@ -946,27 +1054,27 @@ main .education .first-slide .content-box .binary-code-background .skills img:nt
 
  
 /*
-  main .education .first-slide .content-box .binary-code-background .skills img:nth-child(2) {
+  main .education .SKILLS .content-box .binary-code-background .skills img:nth-child(2) {
     html
     
   
 */
 
-  main .education .first-slide .content-box .binary-code-background .skills img:nth-child(3) {
+  main .education .SKILLS .content-box .binary-code-background .skills img:nth-child(3) {
     /*React*/
     grid-column: 4 / 10;
     grid-row: 3 / 6;
 
   }
 
-  main .education .first-slide .content-box .binary-code-background .skills img:nth-child(5) {
+  main .education .SKILLS .content-box .binary-code-background .skills img:nth-child(5) {
     /*PSQL*/
     grid-column: 1 / 4;
     grid-row: 6 / 8;
 
   }
 
-  main .education .first-slide .content-box .binary-code-background .skills img:nth-child(6) {
+  main .education .SKILLS .content-box .binary-code-background .skills img:nth-child(6) {
     /*Kubernetes*/
     grid-column: 1 / 4;
     grid-row: 8 / 10;
@@ -976,7 +1084,7 @@ main .education .first-slide .content-box .binary-code-background .skills img:nt
   }
   
 
-  main .education .first-slide .content-box .binary-code-background .skills img:nth-child(7) {
+  main .education .SKILLS .content-box .binary-code-background .skills img:nth-child(7) {
     /*npm*/
     grid-column: 5 / 9;
     grid-row: 8 / 10;
@@ -988,13 +1096,13 @@ main .education .first-slide .content-box .binary-code-background .skills img:nt
 
 
 @media screen and (min-width: 1000px) {
-  main .projects .first-slide .content-box .MES {
+  main .projects .OPCenter .content-box .MES {
     background-size: 1000px auto; /* Background image width won't exceed 1000px */
   }
 }
 
 @media screen and (min-width: 1000px) {
-  main .projects .second-slide .content-box .CSM {
+  main .projects .Agent-Force .content-box .CSM {
     background-size: 1000px auto; /* Background image width won't exceed 1000px */
   }
 }

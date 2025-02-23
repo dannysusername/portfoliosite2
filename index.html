@@ -1,238 +1,276 @@
 <html>
-  <head>
+  	<head>
 
-    <meta name="author" content="daniel ibarra" >
-    <meta name="description" content="2nd iteration of portfolio site for simpler css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Daniel Ibarra</title>
-    <link rel="stylesheet" href="style.css"/>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/647fe92b87.js" crossorigin="anonymous"></script>
-    <script src="index2.js" defer></script>
-  </head>
+		<meta name="author" content="daniel ibarra" >
+		<meta name="description" content="2nd iteration of portfolio site for simpler css">
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<title>Daniel Ibarra</title>
+		<link rel="stylesheet" href="style.css"/>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+		<script src="https://kit.fontawesome.com/647fe92b87.js" crossorigin="anonymous"></script>
+		<script src="index2.js" defer></script>
+  	</head>
 
-  <body>
-    <main>
-
-		<header>
-			<nav>
-				<ul class="jetbrains-mono">
-					
+  	<body>
+		<main>
+			<header>
+				<nav>
+					<ul class="jetbrains-mono">
 						<li><a href=""> <img src="images/f-35-icon.png" alt="F-35 Fighter Jet Icon"> </a>
 						<li><a href="">Projects</a></li>
 						<li><a href="">Education</a></li>
 						<li><a href="">About me</a></li>
 						<li><a href="">Contact info</a></li>
 						<li class = "burger"><img src="images/hamburger.png" alt="toggle menu"> </li>			
-					
-				</ul>
+					</ul>
+				</nav>
+					<div class = "nav-menu">
+						<ul>
+							<li><a href="">Projects</a></li>
+							<li><a href="">Education</a></li>
+							<li><a href="">About me</a></li>
+							<li><a href="">Contact info</a></li>
+						</ul>
+					</div>
+			</header>
 
-			</nav>
-			<div class = "nav-menu">
-				<ul>
-					<li><a href="">Projects</a></li>
-					<li><a href="">Education</a></li>
-					<li><a href="">About me</a></li>
-					<li><a href="">Contact info</a></li>
-				</ul>
-	
-			</div>
-		</header>
-
+			
 		
-	
-	  
+		
 
-<!--------------------------PROJECTS--------------------------------------->
+	<!--------------------------PROJECTS--------------------------------------->
 
-      <section class="projects">
-        <div class="first-slide"> 
-          <div class="content-box">
-	    
-	      <div class="MES"> 
-		<div class="text-overlay"> 
-		  <p>OPCenter Execution</p>
-	            <div class="click-wrapper">
-		      <a href= "">
-		        <p class="click">Learn more</p>
-		      </a>
-		    </div>
-		</div>
-	      </div>
-            
-	    <div> 
-	    </div>
-	  </div>  	  
-        </div>
-	
-        <div class="second-slide"> 
-          <div class="content-box">
-	    
-	      <div class="CSM"> 
-		<div class="text-overlay"> 
-		  <p>AgentForce</p>
-	            <div class="click-wrapper">
-		      <a href= "">
-		        <p class="click">Learn more</p>
-		      </a>
-		    </div>
-		</div>
-	      </div>
-            
-	    <div> 
-	    </div>
-	  </div>  	  
-        </div>
-      </section>
+			<section class="projects">
+				<div class="OPCenter"> 
+					<div class = "components">
+						<i class="fa-solid fa-arrow-left"></i>
+						<div class = "carousel">
+							<div class = "slide1">
+								<div class="content-box">
+									<div class="MES"> 
+										<div class="text-overlay"> 
+											<p>OPCenter Execution</p>
+											<div class="click-wrapper">
+												<a href= "">
+													<p class="click">Learn more</p>
+												</a>
+											</div>
+										</div>
+									</div>   
+								</div>
+							</div>
+							<div class = "slide2">
 
-<!--------------------------EDUCATION--------------------------------------->
+							</div>
+							<div class = "slide3">
 
-      <section class="education">
-
-        <div class="first-slide"> 
-	  <div class="content-box">
-            <div class="binary-code-background">
-              <div class="skills">
-		<img src="images/java-svg.svg" alt="Java logo">
-		<img src="images/html-css-js.png" alt="Logos of html css and javascript">
-		<img src="images/React_logo.png" alt="React logo">
-		<img src="images/springboot.png" alt="Spring boot logo">
-		<img src="images/postgresql.png" alt="Postgresql logo">
-		<img src="images/Kubernetes.png" alt="Kubernetes logo">
-		<img src="images/npm.png" alt="npm logo">      
-	      </div>	      
-	    </div>
-	  </div>
-        </div>
-
-        <div class="second-slide"> 
-          <div class="content-box">
-	    <a href="education/education.html">
-	      <div class="fiu-library"> 
-		<div class="text-overlay"> 
-                  <p class="abbreviation">FIU, B.S. Computer Science</p>
-		  <p class="not-abbr">Florida International University, B.S. Computer Science</p>
-	          <div class="click-wrapper">
-		      
-		    <p class="click">Learn more</p>
-		      
-		  </div>
-		</div>
-	      </div>
-            </a>
-	    <div> 
-	    </div>
-	  </div>  	  
-        </div>	  
-      </section>
-
-<!--------------------------ABOUT-ME--------------------------------------->
-
-      <section class="about-me">
-        <div class="first-slide"> 
-          <div class="content-box">
-	    <a href="about-me/about-me.html">
-	      <div class="dan-tom-mom"> 
-		<div class="text-overlay"> 
-		  <p>Daniel Ibarra</p>
-	            <div class="click-wrapper">
-		      <p class="click">Learn more</p>
-		    </div>
-		</div>
-	      </div>
-            </a>
-	    <div> 
-	    </div>
-	  </div>  	  
-        </div>
-        
-      </section>
-
-<!--------------------------CONTACT-INFO--------------------------------------->
- 
-      <section class="contact-info">
-        <div class="first-slide"> 
-          <div class="content-box">
-	    
-	      <div class="background-container"> 
-		<div class="background">  
-                  <h1>Contact me 
-			<span class="tooltip-icon" data-tooltip="This is a tooltip message"><i class="fa-solid fa-circle-info"></i><div class="tooltip-message">This message is being sent to me using Twilio. If necessary I will give you my personal number. 
-		    Thanks!</div></span></h1>
-		  <div class="text-overlay">
-		    <form> <!-- This form will send me a message using Twilio so I dont share my personal info -->
-                      <fieldset>
-			<!-- Text Input -->
-			<div class="form-group" >
-                          <div class="credentials" id="username">
-                            <label for="name"><i class="fa-solid fa-user"></i> </label>
-	                    <input type="text" name="name" placeholder="Your name..." onfocus="addBoxShadow('username')" onblur="removeBoxShadow('username')">
-			  </div>
-			  <div class="credentials" id="phone">
-                            <label for="phone"><i class="fa-solid fa-phone"></i> </label>
-	                    <input type="tel" name="phone-num" placeholder="Your phone number..." onfocus="addBoxShadow('phone')" onblur="removeBoxShadow('phone')" >
-			  </div>
-			</div>
+							</div>
+						</div>
+						<i class="fa-solid fa-arrow-right"></i>
+					</div>  	  
+				</div>
 			
-			<div class="textarea-and-send" >    
-			  <div class="label-and-ta">                  
-                            <label style="display: block"  for="message"></label>
-			    <textarea id="message" name="message to Daniel" rows="5" cols="30" placeholder="Type your message here..." onfocus="addBoxShadow('message')" onblur="removeBoxShadow('message')"></textarea>
-			  </div>
-			  <div class="send">
-<!--
-                            <button class="paper-plane-submit" type= "submit" id="message" aria-label="Submit">
-			      <i class="fa-solid fa-paper-plane"></i>
-			    </button>
--->
-			    <button class="send" style="display: block" type="submit" id="message" aria-label="Send">
-			      <p style="margin: 0px" >Send</p> 
-			    </button>
+				<div class="Agent-Force"> 
+					<div class = "components">
+						<i class="fa-solid fa-arrow-left"></i>
+						<div class = "carousel">
+							<div class = "slide1">
+								<div class="content-box">
+									<div class="CSM"> 
+										<div class="text-overlay"> 
+											<p>AgentForce</p>
+											<div class="click-wrapper">
+												<a href= "">
+													<p class="click">Learn more</p>
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>  
+							</div>	
+							<div class = "slide2">
 
-			  </div>
-			</div>
+							</div>
+							<div class = "slide3">
 
-			<div class= "socials">
-			  <a class="linkedin" href="https://www.linkedin.com/in/danielibarra2020/"><i class="fa-brands fa-linkedin-in"></i></a>
-			  <a class="x" href="https://x.com/home"><i class="fa-brands fa-x-twitter"></i></a>
-			  <a class="gmail" href="https://workspace.google.com/intl/en-US/gmail/"><i class="fa-brands fa-google"></i></a>			  
-			</div>
-			
-                      </fieldset>
-                    </form>
-		<!--
-		    <div class="logo-wrapper">
-	              <div class="linkedin-wrapper">
- 		        <a href=""><img src="images/linkedin.png" alt="LinkedIn logo"> <p class ="username">dannyibarra</p></a> 
-		      </div>
-		      <div class="gmail-wrapper">
- 		        <a href=""><img src="images/Gmail_icon.png" alt="Gmail logo">  <p class = "email">dannibar201@gmail.com</p></a> 
-		      </div>
-		    </div>
--->
-		  </div>
-		</div>
-	      </div>
-            
-	    <div> 
-	    </div>
-	  </div>  	  
-        </div>
-	
-        
-      </section>
-    
+							</div> 
+						</div> 
+						<i class="fa-solid fa-arrow-right"></i>
+					</div>
+				</div>
+			</section>
+
+		<!--------------------------EDUCATION--------------------------------------->
+
+			<section class="education">
+				<div class="SKILLS"> 
+					<div class = "components">
+						<i class="fa-solid fa-arrow-left"></i>
+							<div class = "carousel">
+								    <div class = "slide1">
+										<div class="content-box">
+											<div class="binary-code-background">
+												<div class="skills">
+													<img src="images/java-svg.svg" alt="Java logo">
+													<img src="images/html-css-js.png" alt="Logos of html css and javascript">
+													<img src="images/React_logo.png" alt="React logo">
+													<img src="images/springboot.png" alt="Spring boot logo">
+													<img src="images/postgresql.png" alt="Postgresql logo">
+													<img src="images/Kubernetes.png" alt="Kubernetes logo">
+													<img src="images/npm.png" alt="npm logo">      
+												</div>	      
+											</div>
+										</div>
+									</div>
+									<div class = "slide2">
+
+									</div>
+									<div class = "slide3">
+
+									</div>
+							</div>		
+						<i class="fa-solid fa-arrow-right"></i>
+					</div>
+				</div>
+				
+				
+					<div class="FIU-CS-BS"> 
+						<div class = "components">
+							<i class="fa-solid fa-arrow-left"></i>
+							<div class = "carousel">
+								<div class = "slide1">
+									<div class="content-box">
+										<a href="education/education.html">
+											<div class="fiu-library"> 
+												<div class="text-overlay"> 
+													<p class="abbreviation">FIU, B.S. Computer Science</p>
+													<p class="not-abbr">Florida International University, B.S. Computer Science</p>
+													<div class="click-wrapper">
+														<p class="click">Learn more</p>
+													</div>
+												</div>
+											</div>
+										</a>
+									</div>
+								</div> 
+								<div class = "slide2">
+
+								</div>
+								<div class = "slide3">
+
+								</div>
+							</div>
+							<i class="fa-solid fa-arrow-right"></i>
+						</div> 	  
+					</div>	
+				 
+			</section>
+
+		<!--------------------------ABOUT-ME--------------------------------------->
+
+			<section class="about-me">
+				<div class = "components">
+					<i class="fa-solid fa-arrow-left"></i>
+					<div class = "carousel">
+						<div class = "slide1">
+							<div class="Portrait"> 
+								<div class="content-box">
+									<a href="about-me/about-me.html">
+										<div class="dan-tom-mom"> 
+											<div class="text-overlay"> 
+												<p>Daniel Ibarra</p>
+												<div class="click-wrapper">
+													<p class="click">Learn more</p>
+												</div>
+											</div>
+										</div>
+									</a>
+								</div>  	  
+							</div>
+						</div>
+						<div class = "slide2">
+
+						</div>
+						<div class = "slide3">
+
+						</div>
+					</div>
+					<i class="fa-solid fa-arrow-right"></i>
+				</div>
+			</section>
+
+		<!--------------------------CONTACT-INFO--------------------------------------->
+		
+			<section class="contact-info">
+				<div class="first-slide"> 
+					<div class="content-box">
+						<div class="background-container"> 
+							<div class="background">  
+								<h1>Contact me 
+									<span class="tooltip-icon" data-tooltip="This is a tooltip message">
+										<i class="fa-solid fa-circle-info"></i>
+										<div class="tooltip-message">This message is being sent to me using Twilio. 
+											If necessary I will give you my personal number. 
+											Thanks!</div>
+									</span>
+								</h1>
+									<div class="text-overlay">
+										<form> <!-- This form will send me a message using Twilio so I dont share my personal info -->
+
+											<fieldset>
+												<!-- Text Input -->
+												<div class="form-group" >
+													<div class="credentials" id="username">
+														<label for="name"><i class="fa-solid fa-user"></i> </label>
+														<input type="text" name="name" placeholder="Your name..." onfocus="addBoxShadow('username')" onblur="removeBoxShadow('username')">
+													</div>
+													<div class="credentials" id="phone">
+														<label for="phone"><i class="fa-solid fa-phone"></i> </label>
+														<input type="tel" name="phone-num" placeholder="Your phone number..." onfocus="addBoxShadow('phone')" onblur="removeBoxShadow('phone')" >
+													</div>
+												</div>
+					
+												<div class="textarea-and-send" >    
+													<div class="label-and-ta">                  
+														<label style="display: block"  for="message"></label>
+														<textarea id="message" name="message to Daniel" rows="5" cols="30" placeholder="Type your message here..." onfocus="addBoxShadow('message')" onblur="removeBoxShadow('message')"></textarea>
+													</div>
+													<div class="send">
+														<button class="send" style="display: block" type="submit" id="message" aria-label="Send">
+															<p style="margin: 0px" >Send</p> 
+														</button>
+													</div>
+												</div>
+
+												<div class= "socials">
+													<a class="linkedin" href="https://www.linkedin.com/in/danielibarra2020/">
+														<i class="fa-brands fa-linkedin-in"></i>
+													</a>
+													<a class="x" href="https://x.com/home">
+														<i class="fa-brands fa-x-twitter"></i>
+													</a>
+													<a class="gmail" href="https://workspace.google.com/intl/en-US/gmail/">
+														<i class="fa-brands fa-google"></i>
+													</a>			  
+												</div>
+											</fieldset>
+										</form>
+									</div>
+							</div>
+						</div>
+					</div>  	  
+				</div>
+		
+			</section>
+		
 
 
-    </main>
-    <footer>
-      <p>Contact support at: dannyssupportcrew@gmail.com</p>
-    </footer>
-  </body>
-
-
-
+		</main>
+		<footer>
+			<p>Contact support at: dannyssupportcrew@gmail.com</p>
+		</footer>
+  	</body>
 </html>
