@@ -1,4 +1,6 @@
 
+
+
 const burger = document.querySelector(".burger");
 const navmenu = document.querySelector(".nav-menu");
 
@@ -35,3 +37,8 @@ function removeBoxShadow(id) {
   const element = document.getElementById(id);
   element.style.boxShadow = "";
 }
+
+FlightSearch.init({
+  el: document.getElementById('search-fl'),
+  token: 'woozV7g3IkyOBtWkJ0pHhYwjR3Oz7h0hOvQKjMkQDNmGTR71F1k6feWiCGPn',
+});
